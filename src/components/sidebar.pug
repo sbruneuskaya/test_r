@@ -1,0 +1,106 @@
+block meta
+    -
+        const sidebarContent = [
+            {
+                id: 'business',
+                title: 'Business & Management',
+                subtitle_1: 'Market Research Executive',
+                subtitle_2: "Child Psychologist",
+                subtitle_3: "Guidance Counsellor",
+                subtitle_4: "Behaviour Analyst",
+                subtitle_5: "Recreational Therapist",
+            },
+            {
+                id: 'computing',
+                title: 'Computing & IT',
+                subtitle_1: 'Market Research Executive',
+                subtitle_2: "Child Psychologist",
+                subtitle_3: "Guidance Counsellor",
+                subtitle_4: "Behaviour Analyst",
+                subtitle_5: "Recreational Therapist",
+            },
+            {
+                id: 'fashion',
+                title: 'Fashion & Media',
+                subtitle_1: 'Market Research Executive',
+                subtitle_2: "Child Psychologist",
+                subtitle_3: "Guidance Counsellor",
+                subtitle_4: "Behaviour Analyst",
+                subtitle_5: "Recreational Therapist",
+            },
+            {
+                id: 'finance',
+                title: 'Finance & Accounting',
+                subtitle_1: 'Market Research Executive',
+                subtitle_2: "Child Psychologist",
+                subtitle_3: "Guidance Counsellor",
+                subtitle_4: "Behaviour Analyst",
+                subtitle_5: "Recreational Therapist",
+            },
+            {
+                id: 'law',
+                title: 'Law & Criminology',
+                subtitle_1: 'Market Research Executive',
+                subtitle_2: "Child Psychologist",
+                subtitle_3: "Guidance Counsellor",
+                subtitle_4: "Behaviour Analyst",
+                subtitle_5: "Recreational Therapist",
+            },
+            {
+                id: 'marketing',
+                title: 'Marketing & Communications',
+                subtitle_1: 'Market Research Executive',
+                subtitle_2: "Child Psychologist",
+                subtitle_3: "Guidance Counsellor",
+                subtitle_4: "Behaviour Analyst",
+                subtitle_5: "Recreational Therapist",
+            },
+            {
+                id: 'psychology',
+                title: 'Psychology & Social Sciences',
+                subtitle_1: 'Market Research Executive',
+                subtitle_2: "Child Psychologist",
+                subtitle_3: "Guidance Counsellor",
+                subtitle_4: "Behaviour Analyst",
+                subtitle_5: "Recreational Therapist",
+            },
+        ]
+
+.sidebar
+    .sidebar-wrapper_mob
+        .sidebar-info
+            .sidebar-img
+                img(
+                    src=(`./assets/images/sidebar-education.svg`),
+                    alt='education'
+                )
+            .sidebar-title Choose YOUR Career
+        .sidebar-arrow
+    .sidebar-wrapper
+        .sidebar-info
+            .sidebar-img
+                img(
+                    src=(`./assets/images/sidebar-education.svg`),
+                    alt='education'
+                )
+            .sidebar-title Careers
+        .menu
+            each sidebarItem in sidebarContent
+                ul
+                    li
+                        .sidebar-item
+                            p #{sidebarItem.title}
+                            .sidebar-arrow
+                        ul.submenu(id=sidebarItem.id)
+                            li
+                                a(href='#') #{sidebarItem.subtitle_1}
+                            li
+                                a(href='#') #{sidebarItem.subtitle_2}
+                            li
+                                a(href='#') #{sidebarItem.subtitle_3}
+                            li
+                                a(href='#') #{sidebarItem.subtitle_4}
+                            li
+                                a(href='#') #{sidebarItem.subtitle_5}
+        .sidebar-btn__wrapper
+            .sidebar-btn Show all programmes

@@ -1,0 +1,128 @@
+block meta
+    -
+        const cardContent = [
+            {
+                width: '131',
+                img: 'embratur.svg',
+                alt: 'embratur',
+                visible: 'visible'
+            },
+            {
+                width: '168',
+                img: 'barco.svg',
+                alt: 'barco',
+                visible: 'visible'
+            },
+            {
+                width: '195',
+                img: 'danisco.svg',
+                alt: 'embratur',
+                visible: 'visible'
+            },
+            {
+                width: '131',
+                img: 'embratur.svg',
+                alt: 'embratur',
+                visible: 'visible'
+            },
+            {
+                width: '85',
+                img: 'bufets.svg',
+                alt: 'bufets',
+                visible: 'visible'
+            },
+            {
+                width: '168',
+                img: 'barco.svg',
+                alt: 'barco',
+                visible: 'visible'
+            },
+            {
+                width: '131',
+                img: 'embratur.svg',
+                alt: 'embratur',
+                visible: 'hidden'
+            },
+            {
+                width: '168',
+                img: 'barco.svg',
+                alt: 'barco',
+                visible: 'hidden'
+            },
+            {
+                width: '195',
+                img: 'danisco.svg',
+                alt: 'embratur',
+                visible: 'hidden'
+            },
+            {
+                width: '131',
+                img: 'embratur.svg',
+                alt: 'embratur',
+                visible: 'hidden'
+            },
+            {
+                width: '168',
+                img: 'barco.svg',
+                alt: 'barco',
+                visible: 'hidden'
+            },
+            {
+                width: '195',
+                img: 'danisco.svg',
+                alt: 'embratur',
+                visible: 'hidden'
+            },
+        ]
+
+.content
+    .content-container
+        each cardItem in cardContent
+            div(class="card-wrapper" + " " + cardItem.visible)
+                .card
+                    .card-img_mob
+                        img(src='./assets/images/plus-mob.svg', alt='plus')
+                    .card-wrapper
+                        .card-img
+                            .card-img__wrapper(style=cardItem.width)
+                                img(
+                                    src=(`./assets/images/${cardItem.img}`),
+                                    alt=cardItem.alt
+                                )
+                        .card-description
+                            p.card-title Business & Management
+                            p.card-subtitle Master of Business Administration (CMI)
+                            p.card-title_mob Postgraduate
+                    .card-wrapper
+                        .card-info
+                            .card-info__price £12,650
+                            .card-info__item
+                                .card-info__img
+                                    img(src='./assets/images/education.svg', alt='education')
+                                p Postgraduate
+                            .card-info__item
+                                .card-info__img
+                                    img(src='./assets/images/date.svg', alt='date')
+                                p Every 12 weeks
+                        .card-btn
+                            a(href='#', target='_blank') More Info
+                .card-back.card-wrapper
+                    .card-back__img
+                        img(src='./assets/images/plus.svg', alt='plus')
+                    .card-back__description
+                        p.card-back__title MSc Data Analytics and Information Systems Management
+                        .card-back__item
+                            .card-back__item-title Duration:
+                            .card-back__item-subtitle Minimum: 18 months
+                            .card-back__item-subtitle Maximum: 36 months
+                        .card-back__item
+                            .card-back__item-title Start Dates:
+                            .card-back__item-subtitle January, April, July, October
+                    .card-back__info
+                        p £8,500
+                        .card-btn
+                            a(href='#', target='_blank') More Info
+    .card-btn__open
+        p More programmes
+        .card-btn__open-img
+            img(src='./assets/images/refresh.svg', alt='refresh')

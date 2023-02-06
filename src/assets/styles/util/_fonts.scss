@@ -1,0 +1,18 @@
+/*======FONTS==========*/
+@import url('https://fonts.googleapis.com/css2?&family=Open+Sans&family=Playfair+Display&display=swap:wght@400;');
+
+@font-face {
+  font-family: 'Helvetica-Bold';
+  src: url("./src/assets/fonts/Helvetica-Bold.woff2") format("woff2"), url("./src/assets/fonts/Helvetica-Bold.woff2") format("woff");
+  font-weight: bold;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url("./src/assets/fonts/Helvetica.woff2") format("woff2"), url("./src/assets/fonts/Helvetica.woff2") format("woff");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}

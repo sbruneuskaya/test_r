@@ -1,0 +1,9 @@
+@import '../util/var';
+
+.header{
+  grid-area: header;
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  line-height: 46px;
+  color: $color_text;
+}
